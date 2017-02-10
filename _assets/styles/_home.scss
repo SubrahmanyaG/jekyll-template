@@ -1,44 +1,98 @@
-
+.allpage{
   .meeting{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url("/img/banner.jpg");
-    height:900px ;  
+    height: 500px;
+
+.button1 {
+ width: 280px;
+ height: 60px;
+ border-radius: 30px;
+ background-color: #0000ff ;
+ -moz-border-radius:30px;
+ -webkit-border-radius:30px;
+ border:1px solid #1ea2ff ;
+ display: inline-block;
+ cursor:pointer;
+ color:#ffffff ;
+ font-family:Roboto;
+ font-size:20px;
+ text-align:center;
+ padding:15px 30px;
+ text-decoration: none;
+ text-shadow: 0px 1px 0px #3d768a ;
+ justify-content: center;
+}
+.button1:hover {
+ background-color:#1ea2ff ;
+}
+
+.button1:active {
+ position: relative;
+ top:1px;
+}
+.dv1{
+  flex-direction: column;
+  align-items: center;
+
+}
   }
 
   .second{
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
-    height: 1764px;
-    .dv21{}
-    .dv22{}
-    .dv23{}
-    .dv24{}
+    .dv21{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .dv22{
+      display: flex;
+      flex-direction: row;
+      .div22left{
+        flex-direction: column;
+      }
+      
+    }
+    .dv23{
+
+      display: flex;
+      flex-direction: row-reverse;
+      .div23left{
+        flex-direction: column;
+      }
+    }
+    .dv24{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+      
+    }
     .dv25{
       display: flex;
       flex-direction: row;
       align-items: center;
       margin: 10px;
       .dv251{
-        display: flex;
-        margin: 15px;
+      }
       .dv252{
-        display: flex;
-        margin: 15px;
-    }
-    
-    }
 
-  }
-  }
+      }
+        
 
+    }
+  }
   .third{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     background-image: url("/img/insights_bg.jpg");
     width: 100%;
     height: 369px;
@@ -46,12 +100,20 @@
 
 
   }
-  .filfth{
+
+  .forth{
+    align-items: center;
+    background-color: #273140;
+    width: 500px
+
+  }
+  .fifth{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #273140;
     font-size: 1.4em;
-    font-weight: 900;
+    font-weight: 100%  ;
     .dv51{
       display: flex;
       align-items: center;
@@ -69,10 +131,71 @@
 
 
 
+  .sixth{
+    display: flex;
+    flex-direction: column;
+    background-color: #273140;
+    font-size: 1.4em;
+    font-weight: 100%  ; 
+    .price_plan{
+      .Image_page{
+        flex-direction: row;
+        background-color: #673140;
+        font-size: 1.4em;
+        font-weight: 100% ;
+        .add_img1{
+          
+          background-image: url("/img/banner.jpg");
+          height: 50px;
+        }
+        .Rounded-Rectangle-14 {
+          width: 313.1px;
+          height: 523.9px;
+          border-radius: 9px;
+          background-color: #3e4a5c;
+          .Rounded-Rectangle-15 {
+          width: 313.1px;
+  height: 524.4px;
+  border-radius: 9px;
+  background-color: #3e4a5c;                
+  
+          }
+}
+        .add_img1{
+          background-image: url("/img/banner.jpg");
+          height: 50px;
+          width: 100%;
+        }
+                
+           }
+      }
+    }
 
   .seventh{
     display: flex;
     align-items: center;
+    background-color:  #2c3748;
     width: 100%;
     height: 369px;
   }
+
+  .social{
+    display: flex;
+    align-items: center;
+    background-color:  #2cdd48;
+    width: 100%;
+  }
+
+}
+
+.above_logo{
+  display: flex;
+  align-items: center;
+}
+
+.blog_sec1{
+  display: flex;
+  align-items: center;
+  
+}
+

@@ -2,16 +2,32 @@
   //background-color: red;
   padding: 30px;
   width :100%;
-  //display: flex;
-  //flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  //align-items: baseline;
   }
 .headerbox1{
   //align-items : stretch;
-  float: left;
+  display: flex;
+  justify-content: flex-start;
+  //float: left;
 
 }
 .headerbox2{
-  float: right;
+  display: flex;
+  justify-content: flex-end;
+  @media only screen and (max-width:640px){
+    //display: none;
+    //display:none;
+    flex-direction: column;
+
+  }
+}
+@media only screen and (max-width:640px){
+  .hide{
+    display: none;
+  }
 }
 .headerbox2 a{
   color:#fff;

@@ -35,16 +35,19 @@
  position: relative;
  top:1px;
 }
-.dv1{
+.head_line{
   display: flex;
   justify-content: center;
   color:#fff;
   flex-direction: column;
   align-items: center;
+  @media only screen and (max-width: 640px) {
+ font-size: 20px;
+  }
 }
-.dv3{
+.line{
   display: flex;
-  width: 150%;
+  width: 100%;
   height: 250px; 
   justify-content: center;
   img{
@@ -53,12 +56,15 @@
   }
   
 }
-.dv2{
+.head_line_content{
   display: flex;
   justify-content: center;
   flex-direction: column;
   color:#fff;  
   align-items: center;
+  p{
+    color: #fff;
+  }
 }
 
   }
@@ -68,6 +74,7 @@
   }
 }
 .collaborative{
+  padding: 75px;
     display: flex; 
     justify-content: center;  
     flex-direction: column;
@@ -87,7 +94,6 @@
       display: flex;
       flex-direction: row;
       .collab_noteLeft{
-        background-color: blue;
         width: 30%;
         flex-direction: column;
       .button2{
@@ -100,35 +106,41 @@
       }
       
     }
-    .dv23{
+    .collab_notes{
+      align-items: center;
+      justify-content: space-around;
       display: flex;
       flex-direction: row-reverse;
-      
-      .div23left{
-        flex-direction: column;
+      .collab_notes_down{
+        //width: 30%;
+        //height: 350px;
       }
-    }
-    .dv24{
+      img{
+        width: 50%;
+        height: 450px;
+      }
 
+
+    }
+    .templete_widgets{  
+    //background-color: red;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-      
+    height: 200px;
+    .temp{
+      width:30%
     }
-    .dv25{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin: 10px;
-      .dv251{
-      }
-      .dv252{
+    .widg{
+      width:30%
+    }
+    .act{
+      width:30%
+    }
 
-      }
-        
-
+      
     }
   }
   .third{
@@ -144,131 +156,182 @@
 
   }
 
-  .forth{
-    align-items: center;
-    background-color: #273140;
-    width: 100%;
-
-  }
   .user {
-   width: 100%;
+  width: 100%;
   height: 400px;
   background-color: #273140;
   color:#ffffff;
-  
-}
-  .fifth{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  //justify-content: center;
+  .himanshu_dp{
     display: flex;
     flex-direction: column;
+    width: 50%;
+    justify-content: center;
     align-items: center;
-    background-color: #273140;
-    font-size: 1.4em;
-    font-weight: 100%  ;
-    .dv51{
-      display: flex;
-      align-items: center;
+    .CEO{
+      color:#f27f21 
     }
-    .dv52{
-      display: flex;
-      align-items: center;
+    .Must_use{
+      color:#f27f21;
     }
-    .dv53{
-      display: flex;
-      align-items: center;
+    hr{
+      width:80%;
+      size: 2px;
+      color: #ff0000;
     }
-
+    img{
+      width: 10%; height: 40px;
+      
+    }
   }
+  
+
+  
+  
+  
+}
+  // .fifth{
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   background-color: #273140;
+  //   font-size: 1.4em;
+  //   font-weight: 100%  ;
+  //   .dv51{
+  //     display: flex;
+  //     align-items: center;
+  //   }
+  //   .dv52{
+  //     display: flex;
+  //     align-items: center;
+  //   }
+  //   .dv53{
+  //     display: flex;
+  //     align-items: center;
+  //   }
+
+  // }
 
 
 
   .sixth{
-    display: flex;
-    flex-direction: column;
     background-color: #273140;
     font-size: 1.4em;
     font-weight: 100%  ; 
     .price_plan{
-      .Image_page{
-        flex-direction: row;
-        background-color: #673140;
-        font-size: 1.4em;
-        font-weight: 100% ;
-        .add_img1{
-          
-          background-image: url("/img/banner.jpg");
-          height: 50px;
-        }
-        .Rounded-Rectangle-14 {
-          width: 100%;
-          height: 523.9px;
-          border-radius: 9px;
-          background-color: #3e4a5c;
-          .Rounded-Rectangle-15 {
-          width: 100%;
-  height: 524.4px;
-  border-radius: 9px;
-  background-color: #3e4a5c;                
-  
-          }
-}
-        .add_img1{
-          background-image: url("/img/banner.jpg");
-          height: 50px;
-          width: 100%;
-        }
-                
-           }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #273140;
+      h1{
+        display: flex;
+        justify-content: center;
+        color: #fff;
       }
     }
-.PP_below{
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;;
-  .pinkcircle{
-  height: 10px;
-  width: 10px;
-  border-radius: 4px;
-  background-color:deeppink;
-    
-  }
-}
-.Image_page{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; 
-  .Rounded-Rectangle-14 {
-  width: 25%;
-  height: 400px;
-  border-radius: 9px;
-  background-color: #3e4a5c;
-  }
-  p{
-    color: white;
-    font-size: 16px;
-  }
-  .Rounded-Rectangle-15{
-  width: 25%;
-  height: 400px;
-  border-radius: 9px;
-  background-color: #3e4a5c;
-}
-.button_8{ 
- //display: flex;
- //align-items: center;
- width: 200px;
- height: 30px;
- border-radius: 30px;
- background-color: #3e4a5c;
- -moz-border-radius:30px;
- -webkit-border-radius:30px;
- color:white;
- font-family:Roboto;
- font-size:20px;
- border-radius: 9px;
- padding-bottom: 15px;
- //justify-content: center;
-}
+    .PP_below{
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 5px;
+      .pinkcircle{
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color:deeppink;
+        }
+      }
+      .Image_page{
+        display: flex;
+        flex-direction: row;
+        //background-color: #673140;
+        font-size: 1.4em;
+        //font-weight: 100% ;
+        width: 100%;
+        height: 500px;
+        justify-content: space-around;
+        .Rounded-Rectangle-14{
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 400px;
+          border-radius: 9px;
+          background-color: #3e4a5c;
+          h2{
+            color:#ffffff;
+          }
+          p.billed{
+            color: #62f346
+          } 
+          p{
+            color: #fff;
+            font-size: 20px;
+
+          }
+          .button_8{
+            //display: flex;
+            //align-items: center;
+            width: 80%;
+            height: 30px;
+            border-radius: 30px;
+            background-color: #3e4a5c;
+            -moz-border-radius:30px;
+            -webkit-border-radius:30px;
+            color:white;
+            font-family:Roboto;
+            font-size:20px;
+            border-radius: 9px;
+            padding-bottom: 15px;
+            //justify-content: center;
+            }         
+        }
+        .Rounded-Rectangle-15 {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 400px;
+          border-radius: 9px;
+          background-color: #3e4a5c;
+
+          p.RollOut{
+            color: #40a3ff;
+          }
+          p{
+            color: #fff;
+            font-size: 20px;
+            
+          }
+          .button_8{
+            //display: flex;
+            //align-items: center;
+
+            width: 80%;
+            height: 30px;
+            border-radius: 30px;
+            background-color: #3e4a5c;
+            -moz-border-radius:30px;
+            -webkit-border-radius:30px;
+            color:white;
+            font-family:Roboto;
+            font-size:20px;
+            border-radius: 9px;
+            padding-bottom: 15px;
+            justify-content: center;
+            }
+
+          }
+        }
+                
+    }
+
 
 }
   
@@ -282,16 +345,23 @@
   }
 
   .social{
+    align-items: center;
+    justify-content: space-around;
+    img{
+      width: 20px;
+      height: 20px;
+    }
+    
     width: 100%;
     height: 50px;
     display: flex;
-      flex-direction: row;
-      justify-content: center;
+    flex-direction: row;
+    justify-content: center;
 
     
   }
 
-}
+
 
 .above_logo{
   display: flex;
